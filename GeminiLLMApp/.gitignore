@@ -1,2 +1,11 @@
 venv/
-.env/
+*.env
+# Secret files
+.env
+.env.*
+*.env
+
+# Virtual environment
+venv/
+.venv/
+env/
