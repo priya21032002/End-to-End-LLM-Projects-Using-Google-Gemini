@@ -11,8 +11,8 @@ client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 def get_gemini_response(question):
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash-lite",
-            contents=question       
+            model="gemini-2.0-flash",
+            contents=question        
         )
         return response.text
     except Exception as e:
